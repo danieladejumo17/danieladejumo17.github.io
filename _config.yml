@@ -1,14 +1,15 @@
 # Site settings
 # IMPORTANT: Update 'url' below with your GitHub username (replace 'your-username' with your actual username)
-title: "MESGRO - Robotics & Mechatronics Portfolio"
-description: "An open-source template for showcasing robotics and mechatronics projects with 3D models, schematics, and code"
+title: "Daniel Adejumo - Robotics & Mechatronics Engineer"
+description: "Welcome to my portfolio website!"
 url: "https://danieladejumo17.github.io"
 baseurl: "/"
 author: "Daniel Adejumo"
-email: "adejumodaniel17@gmail.com"
+email: "dxa239@nyu.edu"
 github_username: "danieladejumo17"
-linkedin_username: "https://www.linkedin.com/in/daniel-adejumo/"
-twitter_username: "your-twitter-handle"
+linkedin_username: "daniel-adejumo/"
+# TODO: Remove
+twitter_username: "/"
 
 # Build settings
 markdown: kramdown
