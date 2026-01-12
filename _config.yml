@@ -9,7 +9,7 @@ email: "dxa239@nyu.edu"
 github_username: "danieladejumo17"
 linkedin_username: "daniel-adejumo/"
 # TODO: Remove
-twitter_username: "/"
+twitter_username: ""
 
 # Build settings
 markdown: kramdown
@@ -55,6 +55,7 @@ exclude:
   - LICENSE
 
 # Site navigation
+# TODO: Make About and Contact same
 navigation:
   - title: "Home"
     url: "/"
@@ -62,6 +63,10 @@ navigation:
     url: "/projects/"
   - title: "About"
     url: "/about/"
+  - title: "Resume"
+    url: "/resume/"
+  - title: "Contact"
+    url: "/contact/
 
 # Project categories
 project_categories:
