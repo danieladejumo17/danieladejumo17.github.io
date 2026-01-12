@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Daniel Adejumo - Robotics & Mechatronics Engineer</title>
+    <meta name="description"
+        content="Welcome to my portfolio website!">
+
+    <!-- Apply theme immediately to prevent flash -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About | Daniel Adejumo - Robotics &amp; Mechatronics Engineer</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="About" />
+<meta name="author" content="Daniel Adejumo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to my portfolio website!" />
+<meta property="og:description" content="Welcome to my portfolio website!" />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:site_name" content="Daniel Adejumo - Robotics &amp; Mechatronics Engineer" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Daniel Adejumo"},"description":"Welcome to my portfolio website!","headline":"About","name":"Daniel Adejumo - Robotics &amp; Mechatronics Engineer","url":"http://localhost:4000/about/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+</head>
+
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="site-brand">
+                <a href="/" class="brand-link">
+                    <span class="brand-text">Daniel</span>
+                </a>
+            </div>
+
+            <nav class="site-nav" id="site-nav">
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="/"
+                            class="nav-link ">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/projects/"
+                            class="nav-link ">
+                            Projects
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/about/"
+                            class="nav-link active">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/resume/"
+                            class="nav-link ">
+                            Resume
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main id="main-content">
+        <div class="hero-section" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color); text-align: center;">
+    <div class="container">
+        <h1 style="font-size: var(--font-size-3xl); letter-spacing: -0.02em; color: var(--text-primary);">About MESGRO</h1>
+        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">An open-source portfolio template designed specifically for robotics and mechatronics engineers to showcase their innovative projects.</p>
+    </div>
+</div>
+
+<div class="about-content">
+    <div class="container">
+        
+        <section class="about-section">
+            <h2>What is MESGRO?</h2>
+            <p>MESGRO (Mechatronics Engineering Showcase Gallery for Robotics Operations) is a comprehensive Jekyll template that enables engineers, researchers, and students to create stunning portfolios for their robotics and mechatronics projects.</p>
+            
+            <p>Built with modern web technologies and designed with user experience in mind, MESGRO provides everything you need to showcase your technical projects professionally and effectively.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Key Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-cube"></i> Interactive 3D Model Viewer</h3>
+                    <p>Display your mechanical designs, prototypes, and 3D printed parts with an interactive viewer that supports STL, OBJ, GLTF, and GLB formats. Users can rotate, zoom, and explore your designs in detail.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3><i class="fas fa-microchip"></i> Circuit Schematic Display</h3>
+                    <p>Showcase your electrical designs with zoomable and pannable circuit diagrams. Perfect for displaying PCB layouts, wiring diagrams, and system architectures.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3><i class="fas fa-code"></i> Code Integration</h3>
+                    <p>Present your source code with syntax highlighting, tabbed interfaces, and download links. Supports multiple programming languages including C/C++, Python, Arduino, and more.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Responsive Design</h3>
+                    <p>Your portfolio looks great on all devices - from desktop computers to mobile phones. The responsive design ensures optimal viewing experience across all screen sizes.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3><i class="fab fa-github"></i> GitHub Pages Compatible</h3>
+                    <p>Deploy your portfolio for free using GitHub Pages. The template is fully compatible with Jekyll and GitHub's hosting platform.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h3><i class="fas fa-palette"></i> Customizable Theme</h3>
+                    <p>Dark and light themes with easy customization options. Modify colors, fonts, and layouts to match your personal brand.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Perfect For</h2>
+            <div class="perfect-for-grid">
+                <div class="perfect-for-item">
+                    <h4>Students</h4>
+                    <p>Showcase your coursework, capstone projects, and research work to potential employers and graduate schools.</p>
+                </div>
+                
+                <div class="perfect-for-item">
+                    <h4>Engineers</h4>
+                    <p>Display your professional projects, innovations, and technical expertise to colleagues and industry peers.</p>
+                </div>
+                
+                <div class="perfect-for-item">
+                    <h4>Researchers</h4>
+                    <p>Present your research findings, prototypes, and experimental setups with rich media and detailed documentation.</p>
+                </div>
+                
+                <div class="perfect-for-item">
+                    <h4>Hobbyists</h4>
+                    <p>Share your maker projects, Arduino creations, and DIY robotics builds with the maker community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Built With</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3/SCSS</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-gem"></i>
+                    <span>Jekyll</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-cube"></i>
+                    <span>Three.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Pages</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Getting Started</h2>
+            <p>Ready to create your own robotics portfolio? Get started with MESGRO in just a few steps:</p>
+            
+            <ol class="getting-started-steps">
+                <li><strong>Fork the Repository:</strong> Start by forking the MESGRO repository to your GitHub account.</li>
+                <li><strong>Customize Your Content:</strong> Add your projects, update the configuration, and personalize the design.</li>
+                <li><strong>Enable GitHub Pages:</strong> Turn on GitHub Pages in your repository settings to publish your portfolio.</li>
+                <li><strong>Share Your Work:</strong> Your portfolio is now live and ready to share with the world!</li>
+            </ol>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/aojedao/MESGRO" class="btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> Get Started on GitHub
+                </a>
+                <a href="/projects/" class="btn-secondary">
+                    <i class="fas fa-eye"></i> View Example Projects
+                </a>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Contributing</h2>
+            <p>MESGRO is an open-source project and we welcome contributions from the community. Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated.</p>
+            
+            <p>Check out our <a href="https://github.com/aojedao/MESGRO/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guide</a> to get started.</p>
+        </section>
+
+    </div>
+</div>
+
+<style>
+.about-content {
+    padding: var(--spacing-2xl) 0;
+}
+
+.about-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.about-section h2 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+    font-size: var(--font-size-2xl);
+    letter-spacing: -0.01em;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.feature-item {
+    padding: var(--spacing-lg);
+    background-color: var(--surface-color);
+    border-radius: var(--radius-sm);
+    border: none;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px var(--shadow-hover);
+}
+
+.feature-item h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-item h3 i {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+.perfect-for-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.perfect-for-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--surface-color);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.perfect-for-item h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background-color: var(--surface-color);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    min-width: 120px;
+}
+
+.tech-item i {
+    font-size: var(--font-size-2xl);
+    color: var(--accent-color);
+}
+
+.tech-item span {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+}
+
+.getting-started-steps {
+    background-color: var(--surface-color);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    margin: var(--spacing-lg) 0;
+}
+
+.getting-started-steps li {
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height-relaxed);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 640px) {
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .perfect-for-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-stack {
+        justify-content: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-simple">
+            <div class="footer-brand">
+                <h3 class="mesgro-title">MESGRO</h3>
+                <div class="mesgro-definition">
+                    <span class="def-highlight">M</span>echanical,
+                    <span class="def-highlight">E</span>lectronics &
+                    <span class="def-highlight">S</span>oftware
+                    <span class="def-highlight">G</span>allery for
+                    <span class="def-highlight">RO</span>botics
+                </div>
+            </div>
+
+            <div class="social-links-center">
+                
+                <a href="https://github.com/danieladejumo17" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                
+                <a href="https://linkedin.com/in/daniel-adejumo/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                
+                
+                <a href="mailto:dxa239@nyu.edu" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+            </div>
+
+            <div class="footer-credits">
+                <p>&copy; 2026 Daniel Adejumo. Built with &hearts; using Jekyll.</p>
+                <p>Designed and developed by <strong>Alejandro Ojeda Olarte</strong></p>
+                <p><a href="https://github.com/aojedao/MESGRO" target="_blank">MESGRO Template</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/circuit-bg.js"></script>
+
+    <!-- 3D Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- Three.js for additional 3D functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Image zoom library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- Plotly.js for interactive data visualization -->
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+
+    
+</body>
+
+</html>
