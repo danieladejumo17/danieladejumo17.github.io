@@ -9,13 +9,18 @@ layout: default
         <div class="hero-text">
            <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
            <p class="hero-title">Robotics & Mechatronics</p>
+           <p>
+            Hi! Welcome to my portfolio website! I am a second year master's student in Robotics at New York University. I am interested in Robotics, automation, and AI, everything that makes machines move and act intelligently. 
+            <p> I am particularly interested in <span style="color: white; font-weight: bold;"> dynamics and control, and machine-learning methods</span> for control. I am passionate about Reinforcement Learning,and methods for efficient first-order model-based RL and contrained RL, which enable more robust and safe RL.</p>
+            <!-- I am passionate about Reinforcement Learning, specifically efficient first-order model-based methods and constrained RL, which facilitate the development of robust, safety-critical systems. -->
+           </p>
         </div>
         
         <div class="hero-actions">
-          <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
+          <!-- <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
             About
-          </a>
-           <a href="mailto:{{ site.email }}" class="btn-secondary">
+          </a> -->
+           <a href="#contact-email" class="btn-secondary">
             Contact
           </a>
         </div>
@@ -27,8 +32,8 @@ layout: default
 <div class="projects-showcase">
   <div class="container">
     <div class="section-header">
-      <h2>Portfolio</h2>
-      <p class="section-subtitle">A curated collection of my research and design</p>
+      <h2>Project Highlights</h2>
+      <p class="section-subtitle">A selection of major projects and research</p>
     </div>
     
     <div class="projects-grid-featured">
@@ -128,7 +133,7 @@ layout: default
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Electronics</h3>
+          <h4><i class="fas fa-microchip"></i> Electronics & Embedded Systems</h4>
           <div class="skill-tags">
             <span class="skill-tag">Arduino</span>
             <span class="skill-tag">ESP32</span>
@@ -146,12 +151,34 @@ layout: default
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-cube"></i> CAD/Design</h3>
+          <h4><i class="fas fa-cube"></i> CAD & Rapid Prototyping</h4>
           <div class="skill-tags">
             <span class="skill-tag">SolidWorks</span>
             <span class="skill-tag">Fusion 360</span>
             <span class="skill-tag">3D Printing</span>
             <span class="skill-tag">KiCad</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4><i class="fas fa-cube"></i> Machine Learning</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">3D Printing</span>
+            <span class="skill-tag">KiCad</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-cube"></i> Simulation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">IsaacSim</span>
+            <span class="skill-tag">MuJoCo</span>
+            <span class="skill-tag">Genesis</span>
+            <span class="skill-tag">Simulink</span>
+            <span class="skill-tag">Simscape</span>
+            <span class="skill-tag">Gazebo</span>
           </div>
         </div>
       </div>
