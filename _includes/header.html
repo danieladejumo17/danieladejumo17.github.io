@@ -3,7 +3,7 @@
         <div class="header-content">
             <div class="site-brand">
                 <a href="{{ '/' | relative_url }}" class="brand-link">
-                    <span class="brand-text">{{ site.title | split: ' ' | first }}</span>
+                    <span class="brand-text">{{ site.title | split: ' ' | slice: 0, 2 | join: ' ' }}</span>
                 </a>
             </div>
 

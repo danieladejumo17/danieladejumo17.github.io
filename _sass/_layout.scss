@@ -48,6 +48,7 @@
 .site-nav {
   display: flex;
   align-items: center;
+  margin-top: var(--spacing-md);
 }
 
 .nav-list {
@@ -71,7 +72,7 @@ a.nav-link {
   justify-content: center;
   color: var(--text-secondary);
   font-weight: var(--font-weight-medium);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-sm) 0;
   text-align: center;
   text-decoration: none;
   font-size: var(--font-size-xs);
