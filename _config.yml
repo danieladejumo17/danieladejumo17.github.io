@@ -61,12 +61,12 @@ navigation:
     url: "/"
   - title: "Projects"
     url: "/projects/"
-  - title: "About"
+  - title: "Contact"
     url: "/about/"
   - title: "Resume"
     url: "/resume/"
-  - title: "Contact"
-    url: "/contact/"
+  # - title: "Contact"
+  #   url: "/contact/"
 
 # Project categories
 project_categories:
