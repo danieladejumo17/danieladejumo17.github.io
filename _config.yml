@@ -66,7 +66,7 @@ navigation:
   - title: "Resume"
     url: "/resume/"
   - title: "Contact"
-    url: "/contact/
+    url: "/contact/"
 
 # Project categories
 project_categories:
