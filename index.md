@@ -128,17 +128,18 @@ layout: default
           <div class="skill-tags">
             <span class="skill-tag">ROS</span>
             <span class="skill-tag">Kinematics</span>
-            <span class="skill-tag">Path Planning</span>
-            <span class="skill-tag">SLAM</span>
+            <span class="skill-tag">Dynamics</span>
+            <span class="skill-tag">MPC Control</span>
           </div>
         </div>
         <div class="skill-category">
           <h4><i class="fas fa-microchip"></i> Electronics & Embedded Systems</h4>
           <div class="skill-tags">
+            <span class="skill-tag">Electronics</span>
             <span class="skill-tag">Arduino</span>
-            <span class="skill-tag">ESP32</span>
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">Sensors</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">ESP MCUs</span>
+            <!-- <span class="skill-tag">Microcontroller Programming</span> -->
           </div>
         </div>
         <div class="skill-category">
@@ -156,17 +157,18 @@ layout: default
             <span class="skill-tag">SolidWorks</span>
             <span class="skill-tag">Fusion 360</span>
             <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">CNC</span>
+            <span class="skill-tag">AutoCAD</span>
           </div>
         </div>
 
         <div class="skill-category">
           <h4><i class="fas fa-cube"></i> Machine Learning</h4>
           <div class="skill-tags">
-            <span class="skill-tag">SolidWorks</span>
-            <span class="skill-tag">Fusion 360</span>
-            <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">VLMs</span>
           </div>
         </div>
 
