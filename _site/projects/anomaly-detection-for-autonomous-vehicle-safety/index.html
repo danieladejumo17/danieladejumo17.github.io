@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection For Autonomous Vehicle Safety - Daniel Adejumo - Robotics & Mechatronics Engineer</title>
+    <meta name="description"
+        content="Research project on real-time anomaly detection pipeline for autonomous vehicles using Vision-Language Models (VLMs) and advanced model optimization techniques.">
+
+    <!-- Apply theme immediately to prevent flash -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Anomaly Detection For Autonomous Vehicle Safety | Daniel Adejumo - Robotics &amp; Mechatronics Engineer</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Anomaly Detection For Autonomous Vehicle Safety" />
+<meta name="author" content="Daniel Adejumo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Research project on real-time anomaly detection pipeline for autonomous vehicles using Vision-Language Models (VLMs) and advanced model optimization techniques." />
+<meta property="og:description" content="Research project on real-time anomaly detection pipeline for autonomous vehicles using Vision-Language Models (VLMs) and advanced model optimization techniques." />
+<link rel="canonical" href="http://localhost:4000/projects/anomaly-detection-for-autonomous-vehicle-safety/" />
+<meta property="og:url" content="http://localhost:4000/projects/anomaly-detection-for-autonomous-vehicle-safety/" />
+<meta property="og:site_name" content="Daniel Adejumo - Robotics &amp; Mechatronics Engineer" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-12-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Anomaly Detection For Autonomous Vehicle Safety" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daniel Adejumo"},"dateModified":"2025-12-20T00:00:00-05:00","datePublished":"2025-12-20T00:00:00-05:00","description":"Research project on real-time anomaly detection pipeline for autonomous vehicles using Vision-Language Models (VLMs) and advanced model optimization techniques.","headline":"Anomaly Detection For Autonomous Vehicle Safety","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/anomaly-detection-for-autonomous-vehicle-safety/"},"url":"http://localhost:4000/projects/anomaly-detection-for-autonomous-vehicle-safety/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+</head>
+
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="site-brand">
+                <a href="/" class="brand-link">
+                    <span class="brand-text">Daniel Adejumo</span>
+                </a>
+            </div>
+
+            <nav class="site-nav" id="site-nav">
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="/"
+                            class="nav-link ">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/projects/"
+                            class="nav-link ">
+                            Projects
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#contact-email"
+                            class="nav-link ">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/resume/"
+                            class="nav-link ">
+                            Resume
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main id="main-content">
+        <div class="project-hero">
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">Anomaly Detection For Autonomous Vehicle Safety</h1>
+            <p class="project-description">Research project on real-time anomaly detection pipeline for autonomous vehicles using Vision-Language Models (VLMs) and advanced model optimization techniques.</p>
+
+            <div class="project-meta">
+                
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="project-content">
+    <div class="container">
+
+        <div class="project-header-simple">
+            <h1 class="project-title-simple">Anomaly Detection For Autonomous Vehicle Safety</h1>
+        </div>
+
+        <div class="project-split-layout">
+            <!-- Left Column: Text & Info -->
+            <div class="project-left-panel">
+
+                <!-- Overview / Description -->
+                <section class="project-section-clean" id="description">
+                    <h3>Overview</h3>
+                    <div class="project-description-content">
+                        <p class="project-lead">Autonomous Vehicles (AVs) often struggle with 'semantic anomaly' scenarios, such as mistaking a stop sign on a billboard for a real traffic signal, because these out-of-distribution scenes and context fall outside the narrow scope of traditional training data. We can leverage the much broader 'world understanding' in Vision Language Models (VLMs) and Large Language Models to reason about these edge cases and make more human-like decisions in AVs. However, VLMs are computationally expensive and not suitable for real-time applications out of the box.
+<br> <br>
+This project developed a real-time inference pipeline for anomaly detection using a VLM backbone. By combining quantization, prompt engineering, and the accelerated FP4 computation on the new Nvidia Blackwell architecture, we achieved  500ms end-to-end processing time, an 80% reduction in reasoning time. This significant improvement brings VLMs closer to real-time applications in AVs.</p>
+                        <!-- ## Project Overview -->
+
+<!-- Autonomous Vehicles often struggle with edge-case scenerios, when the vehicle encounters out-of-distribution objects (objects that were never seen during training). Self driving cars have been shown to be susceptible to fooling e.g., a stop sign on a billboard or pedestrian shirts, a traffic light on a truck, etc. This semantic Anomalies are challenging for traditional ML systems due to the limited domain of the training data. We can leverage the much broader 'world understanding' in Vision Language Models to reason about this edge-cases and make more human-like decisions in AVs. However, VLMs are computationally expensive and not suitable for real-time applications out of the box. -->
+
+<!-- This project developed a real-time inference pipeline for anomaly detection using a VLM backbone. By combining quantization, prompt engineering, and the accelerated FP4 computation on the new Nvidia Blackwell architecture, we achieved  500ms end-to-end processing time, a significant improvement bringing VLMs closer for real-time applications in AVs. -->
+
+<h1 id="methodology">Methodology</h1>
+
+<h2 id="semantic-reasoning">Semantic Reasoning</h2>
+<p>To address the “semantic gap” where traditional AV pipelines fail to understand context (e.g., distinguishing a stop sign on a billboard from a real signal), we used the NVIDIA Cosmos-Reason1-7B Vision-Language Model (VLM). This model provides zero-shot reasoning capabilities, allowing the system to analyze complex, out-of-distribution scenes and classify them as “Normal” or “Anomaly”.</p>
+
+<h2 id="datasets">Datasets</h2>
+<p>STU Dataset
+Harzard Perception Dataset
+…video stream as a camera stream would be handled in the real vehicle.</p>
+
+<h2 id="temporal-reasoning">Temporal Reasoning</h2>
+<p>Unlike traditional systems that rely on static snapshots, our pipeline captures dynamic anomalies that unfold over time using a video-based approach. We implemented a sliding window technique with a window size of 50 frames and a step size of 20 frames. This allows the model to maintain temporal context, ensuring that motion-based irregularities and evolving hazards are detected effectively.</p>
+
+<h2 id="input-and-generated-token-budgeting">Input and Generated Token Budgeting</h2>
+<p>To transition large VLMs from research to real-time application, we strictly budgeted computational resources.</p>
+
+<p>Input Optimization: Video inputs are downsampled to 4 FPS and resolutions reduced (e.g., 384x242 or 250x250) to minimize the data load.</p>
+
+<p>Token Budgeting: We restricted the maximum generated tokens to 5. By forcing the model to output concise binary classifications or brief justifications, we significantly reduced the inference latency typically associated with autoregressive text generation.</p>
+
+<h2 id="quantization">Quantization</h2>
+<p>To further reduce memory footprint and accelerate inference, we applied 4-bit and 8-bit quantization techniques to the VLM backbone. This compression allowed the massive parameter set of the Cosmos-Reason1-7B model to run efficiently on edge-grade hardware without a catastrophic loss in reasoning accuracy, contributing directly to our &lt;500ms inference time target.</p>
+
+<h2 id="hardware">Hardware</h2>
+<p>The project leveraged a heterogeneous hardware stack to handle simulation, training, and inference:</p>
+
+<p>Compute: We utilized Vast.ai for decentralized cloud computing to access high-performance GPUs.</p>
+
+<p>GPUs: Initial testing was conducted on NVIDIA RTX 4080 units (1.5s latency), while final optimization and real-time validation (500ms latency) utilized the NVIDIA RTX 5090.</p>
+
+<h1 id="tools-and-libraries">Tools and Libraries</h1>
+<ul>
+  <li>
+    <p><strong>Simulation &amp; Environment:</strong> CARLA Simulator (Synthetic data generation, edge-case modeling)</p>
+  </li>
+  <li>
+    <p><strong>AI Models:</strong> NVIDIA Cosmos-Reason1-7B (VLM), Isolation Forest (Unsupervised Learning), Autoencoders</p>
+  </li>
+  <li>
+    <p><strong>Algorithms:</strong> Fully-Convolutional Data Description (FCDD), PatchCore</p>
+  </li>
+  <li>
+    <p><strong>Optimization:</strong> FlashAttention2 (Memory I/O acceleration), 4-bit/8-bit Quantization</p>
+  </li>
+  <li>
+    <p><strong>Compute Platform:</strong> Vast.ai (Decentralized Cloud Computing)</p>
+  </li>
+  <li>
+    <p><strong>Hardware:</strong> NVIDIA RTX 5090, RTX 4080</p>
+  </li>
+</ul>
+
+                    </div>
+                </section>
+
+
+
+                <!-- Code Section (Collapsible) -->
+                
+
+                <!-- Components & Materials -->
+                
+
+                <!-- Meta / Actions (Moved to bottom of left) -->
+                <div class="project-meta-bottom">
+
+                    <div class="project-actions-small">
+                        
+
+                        
+                    </div>
+
+                    <div class="project-categories-bottom">
+                        
+                        <span class="category-tag-small">Anomaly Detection</span>
+                        
+                        <span class="category-tag-small">Vision Language Models</span>
+                        
+                        <span class="category-tag-small">Large Language Models</span>
+                        
+                        <span class="category-tag-small">Machine Learning</span>
+                        
+                        <span class="category-tag-small">Robotics</span>
+                        
+                        <span class="category-tag-small">Computer Vision</span>
+                        
+                        <span class="category-tag-small">PyTorch</span>
+                        
+                        <span class="category-tag-small">Python</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Media -->
+            <div class="project-right-panel">
+
+
+
+                <!-- 3D Models Section -->
+                
+
+                <!-- Media Gallery -->
+                
+                <section class="project-media-group" id="gallery">
+                    <div class="media-gallery-stack">
+                        
+                        <div class="media-item">
+                            
+                            
+                            <img src="/assets/images/projects/anomaly_det/output_20s_40s_4x.gif"
+                                alt="Example anomaly reasoning on the Harzard Perception Dataset (4x Speed)" class="gallery-image" data-zoomable>
+                            
+                            
+                            <p class="media-caption">Example anomaly reasoning on the Harzard Perception Dataset (4x Speed)</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/anomaly_det/output_1m30s_1m47s.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">Example anomaly reasoning on the Harzard Perception Dataset</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/anomaly_det/stu_small_object_10s_15s.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">Example anomaly reasoning on the 'Spotting the Unexpected' dataset capturing small object anomalies</p>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Visualizations (Interactive HTML Plots) -->
+                
+
+                <!-- Plotly for custom plots -->
+                
+
+                <!-- Interactive Data Plot (only if page has interactive_plot: true) -->
+                
+
+                <!-- Custom Plot Include -->
+                
+
+                <!-- Circuit Schematics -->
+                
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Project Navigation -->
+<div class="project-navigation">
+    <div class="container">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="nav-links">
+            
+            
+            <a href="" class="nav-link prev">
+                <i class="fas fa-chevron-left"></i>
+                <span></span>
+            </a>
+            
+
+            <a href="/projects/" class="nav-link all-projects">
+                <i class="fas fa-th"></i>
+                <span>All Projects</span>
+            </a>
+
+            
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-simple">
+            <div class="footer-brand">
+                <h3 id="contact-email" class="mesgro-title">Contact</h3>
+                <p class="footer-contact-subtitle">Happy to start a conversation!</p>
+                <p class="footer-contact-email">
+                    <a href="mailto:dxa239@nyu.edu">dxa239@nyu.edu</a>
+                </p>
+            <!-- </div> -->
+
+            <div class="social-links-center">
+                
+                <a href="https://github.com/danieladejumo17" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                
+                <a href="https://linkedin.com/in/daniel-adejumo/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                
+                
+                <a href="mailto:dxa239@nyu.edu" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+            </div>
+            </div>
+
+            <div class="footer-credits">
+                <p>&copy; 2026 Daniel Adejumo. Built with &hearts; using Jekyll.</p>
+                <p>Designed and developed by <strong>Alejandro Ojeda Olarte</strong></p>
+                <p><a href="https://github.com/aojedao/MESGRO" target="_blank">MESGRO Template</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/circuit-bg.js"></script>
+
+    <!-- 3D Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- Three.js for additional 3D functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Image zoom library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- Plotly.js for interactive data visualization -->
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+
+    
+    <script src="/assets/js/project-viewer.js"></script>
+    
+</body>
+
+</html>

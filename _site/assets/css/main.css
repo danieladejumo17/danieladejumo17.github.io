@@ -155,7 +155,7 @@ a.nav-link.active::after { content: ''; position: absolute; bottom: 0; left: 0; 
 
 .def-highlight { color: var(--primary-color); font-weight: 800; /* font-family: 'JetBrains Mono', monospace; */ /* Removed to fix alignment */ }
 
-.social-links-center { display: flex; justify-content: center; gap: var(--spacing-md); margin-bottom: var(--spacing-xl); }
+.social-links-center { display: flex; justify-content: center; gap: var(--spacing-md); }
 
 .social-links-center a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: var(--radius-full); background-color: var(--background-color); color: var(--text-secondary); border: 1px solid var(--border-color); transition: all var(--transition-fast); }
 

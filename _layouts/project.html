@@ -40,7 +40,7 @@ layout: default
                 <section class="project-section-clean" id="description">
                     <h3>Overview</h3>
                     <div class="project-description-content">
-                        <p class="project-lead">{{ page.description }}</p>
+                        <p class="project-lead">{{ page.overview }}</p>
                         {{ content }}
                     </div>
                 </section>
@@ -128,7 +128,7 @@ layout: default
                     </div>
 
                     <div class="project-categories-bottom">
-                        {% for category in page.categories %}
+                        {% for category in page.skills %}
                         <span class="category-tag-small">{{ category }}</span>
                         {% endfor %}
                     </div>

@@ -8,7 +8,7 @@ layout: default
       <div class="hero-info-wrapper">
         <div class="hero-text">
            <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
-           <p class="hero-title">Robotics & Mechatronics</p>
+           <p class="hero-title">Robotics & Machine Learning</p>
            <p>
             Welcome to my portfolio website! I am a second year master's student in Robotics at New York University. I am interested in Robotics, automation, and AI, everything that makes machines move and act intelligently. 
             <p> I am particularly interested in <span style="color: white; font-weight: bold;"> dynamics and control, and machine-learning methods</span> for control. I am passionate about Reinforcement Learning,and methods for efficient first-order model-based RL and contrained RL, which enable more robust and safe RL.</p>

@@ -9,7 +9,7 @@ email: "dxa239@nyu.edu"
 github_username: "danieladejumo17"
 linkedin_username: "daniel-adejumo/"
 # TODO: Remove
-twitter_username: ""
+# twitter_username: ""
 
 # Build settings
 markdown: kramdown
@@ -62,7 +62,7 @@ navigation:
   - title: "Projects"
     url: "/projects/"
   - title: "Contact"
-    url: "/about/"
+    url: "#contact-email"
   - title: "Resume"
     url: "/resume/"
   # - title: "Contact"
@@ -85,6 +85,15 @@ project_categories:
   - name: "IoT"
     slug: "iot"
     description: "Internet of Things devices and applications"
+  - name: "Large Language Models"
+    slug: "Large Language Models"
+    description: "Large Language Models and applications"
+  - name: "Vision Language Models"
+    slug: "Vision Language Models"
+    description: "Vision Language Models and applications"
+  - name: "Anomaly Detection"
+    slug: "Anomaly Detection"
+    description: "Anomaly detection and applications"
 
 # 3D Model settings
 models:
@@ -98,3 +107,11 @@ schematics:
   supported_formats: ["png", "jpg", "jpeg", "svg", "pdf"]
   zoom_enabled: true
   pan_enabled: true
+
+# eval "$(rbenv init -)" && cd /home/daniel/Dev/portfolio/danieladejumo17.github.io && bundle exec jekyll serve
+# DLabs Project
+# Hand Design
+# Car Designs
+# V8 Engine
+# Water piping in inventor
+# etc...

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonmous Mobile Drawing Robot - Daniel Adejumo - Robotics & Mechatronics Engineer</title>
+    <meta name="description"
+        content="A G-Code-based mobile drawing robot for small to large scale drawing, overcoming workspace constraint in traditional robotic drawing systems">
+
+    <!-- Apply theme immediately to prevent flash -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+    <!-- SEO -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Autonmous Mobile Drawing Robot | Daniel Adejumo - Robotics &amp; Mechatronics Engineer</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Autonmous Mobile Drawing Robot" />
+<meta name="author" content="Daniel Adejumo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A G-Code-based mobile drawing robot for small to large scale drawing, overcoming workspace constraint in traditional robotic drawing systems" />
+<meta property="og:description" content="A G-Code-based mobile drawing robot for small to large scale drawing, overcoming workspace constraint in traditional robotic drawing systems" />
+<link rel="canonical" href="http://localhost:4000/projects/mobile-drawing-robot/" />
+<meta property="og:url" content="http://localhost:4000/projects/mobile-drawing-robot/" />
+<meta property="og:site_name" content="Daniel Adejumo - Robotics &amp; Mechatronics Engineer" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-12-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Autonmous Mobile Drawing Robot" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daniel Adejumo"},"dateModified":"2025-12-18T00:00:00-05:00","datePublished":"2025-12-18T00:00:00-05:00","description":"A G-Code-based mobile drawing robot for small to large scale drawing, overcoming workspace constraint in traditional robotic drawing systems","headline":"Autonmous Mobile Drawing Robot","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/mobile-drawing-robot/"},"url":"http://localhost:4000/projects/mobile-drawing-robot/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+</head>
+
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="site-brand">
+                <a href="/" class="brand-link">
+                    <span class="brand-text">Daniel Adejumo</span>
+                </a>
+            </div>
+
+            <nav class="site-nav" id="site-nav">
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="/"
+                            class="nav-link ">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/projects/"
+                            class="nav-link ">
+                            Projects
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#contact-email"
+                            class="nav-link ">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/resume/"
+                            class="nav-link ">
+                            Resume
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main id="main-content">
+        <div class="project-hero">
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">Autonmous Mobile Drawing Robot</h1>
+            <p class="project-description">A G-Code-based mobile drawing robot for small to large scale drawing, overcoming workspace constraint in traditional robotic drawing systems</p>
+
+            <div class="project-meta">
+                
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="project-content">
+    <div class="container">
+
+        <div class="project-header-simple">
+            <h1 class="project-title-simple">Autonmous Mobile Drawing Robot</h1>
+        </div>
+
+        <div class="project-split-layout">
+            <!-- Left Column: Text & Info -->
+            <div class="project-left-panel">
+
+                <!-- Overview / Description -->
+                <section class="project-section-clean" id="description">
+                    <h3>Overview</h3>
+                    <div class="project-description-content">
+                        <p class="project-lead">Details soon!</p>
+                        
+
+                    </div>
+                </section>
+
+
+
+                <!-- Code Section (Collapsible) -->
+                
+
+                <!-- Components & Materials -->
+                
+
+                <!-- Meta / Actions (Moved to bottom of left) -->
+                <div class="project-meta-bottom">
+
+                    <div class="project-actions-small">
+                        
+
+                        
+                    </div>
+
+                    <div class="project-categories-bottom">
+                        
+                        <span class="category-tag-small">Mechatronics</span>
+                        
+                        <span class="category-tag-small">Robotics</span>
+                        
+                        <span class="category-tag-small">C/C++</span>
+                        
+                        <span class="category-tag-small">Python Arduino</span>
+                        
+                        <span class="category-tag-small">Raspberry Pi</span>
+                        
+                        <span class="category-tag-small">CAD</span>
+                        
+                        <span class="category-tag-small">Electronics</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Media -->
+            <div class="project-right-panel">
+
+
+
+                <!-- 3D Models Section -->
+                
+
+                <!-- Media Gallery -->
+                
+                <section class="project-media-group" id="gallery">
+                    <div class="media-gallery-stack">
+                        
+                        <div class="media-item">
+                            
+                            
+                            <img src="/assets/images/projects/drawing_robot/ROBOT%20IMAGE.jpeg"
+                                alt="Robot hardware" class="gallery-image" data-zoomable>
+                            
+                            
+                            <p class="media-caption">Robot hardware</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/drawing_robot/Alien%20Head%20Timelapse.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">Alien head timelapse</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/drawing_robot/Drawing%20Viz.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">Drawing visualization</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/drawing_robot/P2_Rangoli.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">Rangoli drawing</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <video controls class="gallery-video">
+                                <source src="/assets/images/projects/drawing_robot/House%20Timelapse.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            
+                            <p class="media-caption">House timelapse</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <img src="/assets/images/projects/drawing_robot/Cloud%20Nice.jpg"
+                                alt="Cloud drawing" class="gallery-image" data-zoomable>
+                            
+                            
+                            <p class="media-caption">Cloud drawing</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <img src="/assets/images/projects/drawing_robot/Spiral%20Nice.jpg"
+                                alt="Spiral drawing" class="gallery-image" data-zoomable>
+                            
+                            
+                            <p class="media-caption">Spiral drawing</p>
+                            
+                        </div>
+                        
+                        <div class="media-item">
+                            
+                            
+                            <img src="/assets/images/projects/drawing_robot/Rangoli_Sample.png"
+                                alt="Rangoli sample" class="gallery-image" data-zoomable>
+                            
+                            
+                            <p class="media-caption">Rangoli sample</p>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Visualizations (Interactive HTML Plots) -->
+                
+
+                <!-- Plotly for custom plots -->
+                
+
+                <!-- Interactive Data Plot (only if page has interactive_plot: true) -->
+                
+
+                <!-- Custom Plot Include -->
+                
+
+                <!-- Circuit Schematics -->
+                
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Project Navigation -->
+<div class="project-navigation">
+    <div class="container">
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="nav-links">
+            
+            
+            <a href="" class="nav-link prev">
+                <i class="fas fa-chevron-left"></i>
+                <span></span>
+            </a>
+            
+
+            <a href="/projects/" class="nav-link all-projects">
+                <i class="fas fa-th"></i>
+                <span>All Projects</span>
+            </a>
+
+              <a
+                href="/projects/reward-shaping-for-quadruped-locomotion/" class="nav-link next">
+                <span>Reward Shaping for Quadruped Locomotion</span>
+                <i class="fas fa-chevron-right"></i>
+                </a>
+                
+        </div>
+    </div>
+</div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-simple">
+            <div class="footer-brand">
+                <h3 id="contact-email" class="mesgro-title">Contact</h3>
+                <p class="footer-contact-subtitle">Happy to start a conversation!</p>
+                <p class="footer-contact-email">
+                    <a href="mailto:dxa239@nyu.edu">dxa239@nyu.edu</a>
+                </p>
+            <!-- </div> -->
+
+            <div class="social-links-center">
+                
+                <a href="https://github.com/danieladejumo17" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                
+                <a href="https://linkedin.com/in/daniel-adejumo/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                
+                
+                <a href="mailto:dxa239@nyu.edu" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+            </div>
+            </div>
+
+            <div class="footer-credits">
+                <p>&copy; 2026 Daniel Adejumo. Built with &hearts; using Jekyll.</p>
+                <p>Designed and developed by <strong>Alejandro Ojeda Olarte</strong></p>
+                <p><a href="https://github.com/aojedao/MESGRO" target="_blank">MESGRO Template</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/circuit-bg.js"></script>
+
+    <!-- 3D Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- Three.js for additional 3D functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Image zoom library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- Plotly.js for interactive data visualization -->
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+
+    
+    <script src="/assets/js/project-viewer.js"></script>
+    
+</body>
+
+</html>

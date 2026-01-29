@@ -233,7 +233,7 @@ a.nav-link.active::after {
   display: flex;
   justify-content: center;
   gap: var(--spacing-md);
-  margin-bottom: var(--spacing-xl);
+  // margin-bottom: var(--spacing-xl);
 }
 
 .social-links-center a {
