@@ -35,23 +35,32 @@ gallery:
 
 <!-- This project developed a real-time inference pipeline for anomaly detection using a VLM backbone. By combining quantization, prompt engineering, and the accelerated FP4 computation on the new Nvidia Blackwell architecture, we achieved  500ms end-to-end processing time, a significant improvement bringing VLMs closer for real-time applications in AVs. -->
 
+<!--
 # Methodology 
 
 ## Semantic Reasoning
-To address the "semantic gap" where traditional AV pipelines fail to understand context (e.g., distinguishing a stop sign on a billboard from a real signal), we used the NVIDIA Cosmos-Reason1-7B Vision-Language Model (VLM). This model provides zero-shot reasoning capabilities, allowing the system to analyze complex, out-of-distribution scenes and classify them as "Normal" or "Anomaly".
+To address the "semantic gap" where traditional AV pipelines fail to understand context (e.g., distinguishing a stop sign on a billboard from a real signal), we used the NVIDIA Cosmos-Reason1-7B Vision-Language Model (VLM). This model provides zero-shot reasoning capabilities, allowing the system to analyze complex, out-of-distribution scenes.
+ <!-- and classify them as "Normal" or "Anomaly". -->
+
+<!-- When hardware is ready and quant. is finalized, get MAX. processing freq. --//>
+## Temporal Reasoning
+Unlike traditional systems that rely on static snapshots, our pipeline captures dynamic anomalies that unfold over time using a video-based approach. The model reasons on video input with a duration of 5s (the past 5s till now). This allows the model to maintain temporal context, ensuring that motion-based irregularities and evolving hazards are detected effectively.
 
 ## Datasets
-STU Dataset
-Harzard Perception Dataset
-...video stream as a camera stream would be handled in the real vehicle.
+### STU Dataset
+<!-- [Spotting the Unexpected (STU)](https://doi.org/10.48550/arXiv.2505.02148) --//>
+The <a href="https://doi.org/10.48550/arXiv.2505.02148" target="_blank" rel="noopener noreferrer"> Spotting the Unexpected (STU) </a> dataset provides sample scenerios where anomalous objects are introduced into the driving scene. These objects represents objects that are typically out-of-distribution for AV training. Video streams are created from the dataset, simulating a camera stream in the real world.
 
-## Temporal Reasoning
-Unlike traditional systems that rely on static snapshots, our pipeline captures dynamic anomalies that unfold over time using a video-based approach. We implemented a sliding window technique with a window size of 50 frames and a step size of 20 frames. This allows the model to maintain temporal context, ensuring that motion-based irregularities and evolving hazards are detected effectively.
+For model performance evaluation, the predictions of the model are compared to the ground-truth label for each image frame from the dataset. To generate each frame's label (Normal/Anomaly), we post-processed the lidar point cloud labels in STU dataset to generate a per frame anomaly label.
+
+### Harzard Perception Dataset
+The Hazard Perception Test represent a highly-contextual, developing anomaly/hazard reasoning widely used for driving test in Europe. We curated the dataset using the ego-view video of driving samples from the test, and giving a label to each frame. The anomaly occurs in a single sequence (Normal Sequence -> Anomaly Sequence -> Normal Sequence), making frame labeling easier. Simailar to the STU dataset, video streams are created from the dataset, simulating a camera stream in the real world.
+
 
 ## Input and Generated Token Budgeting
-To transition large VLMs from research to real-time application, we strictly budgeted computational resources.
+<!-- To transition large VLMs from research to real-time application, we strictly budgeted computational resources. --//>
 
-Input Optimization: Video inputs are downsampled to 4 FPS and resolutions reduced (e.g., 384x242 or 250x250) to minimize the data load.
+Input Optimization: Video inputs are downsampled to 4 FPS and resolutions reduced (e.g., 384x242 or 250x250) to minimize the size of input tokens processed.
 
 Token Budgeting: We restricted the maximum generated tokens to 5. By forcing the model to output concise binary classifications or brief justifications, we significantly reduced the inference latency typically associated with autoregressive text generation.
 
@@ -64,6 +73,7 @@ The project leveraged a heterogeneous hardware stack to handle simulation, train
 Compute: We utilized Vast.ai for decentralized cloud computing to access high-performance GPUs.
 
 GPUs: Initial testing was conducted on NVIDIA RTX 4080 units (1.5s latency), while final optimization and real-time validation (500ms latency) utilized the NVIDIA RTX 5090.
+-->
 
 # Tools and Libraries
 - **Simulation & Environment:** CARLA Simulator (Synthetic data generation, edge-case modeling)
