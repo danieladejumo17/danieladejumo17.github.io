@@ -10,10 +10,19 @@ layout: default
            <h1 class="hero-name">{{ site.author | default: "Your Name" }}</h1>
            <p class="hero-title">Robotics & Machine Learning</p>
            <p>
-            Welcome to my portfolio website! I am a recent M.S. graduate in Mechatronics and Robotics Engineering from New York University, interested in robotics, automation, and AI - the systems that make machines move and act intelligently. 
-            <p> My focus is <span style="color: white; font-weight: bold;"> dynamics and control and machine-learning methods</span> for control. I work on reinforcement learning for high-dimensional robotic systems, including constrained RL for safe, reliable deployment on real hardware, and I am particularly interested in first-order model-based methods for efficient policy optimization.</p>
-            <!-- I am passionate about Reinforcement Learning, specifically efficient first-order model-based methods and constrained RL, which facilitate the development of robust, safety-critical systems. -->
-           </p>
+            Welcome to my portfolio website! I am a recent M.S. graduate in
+            Mechatronics and Robotics Engineering from New York University,
+            interested in robotics, automation, and AI &mdash; the systems that
+            make machines move and act intelligently.
+          </p>
+          <p>
+            My focus is <strong style="color: white;">dynamics and control</strong> and
+            <strong style="color: white;">machine-learning methods for control</strong>. I work on
+            reinforcement learning for high-dimensional robotic systems,
+            particularly first-order model-based methods for efficient policy
+            optimization and constrained RL for safe, reliable deployment on
+            real hardware.
+          </p>
         </div>
         
         <div class="hero-actions">
