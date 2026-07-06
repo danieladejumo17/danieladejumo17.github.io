@@ -12,7 +12,7 @@ layout: default
            <p>
             Welcome to my portfolio website! I am a recent M.S. graduate in
             Mechatronics and Robotics Engineering from New York University,
-            interested in robotics, automation, and AI &mdash; the systems that
+            interested in robotics, automation, and AI - the systems that
             make machines move and act intelligently.
           </p>
           <p>
